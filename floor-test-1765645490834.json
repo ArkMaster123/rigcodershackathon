@@ -1,0 +1,51 @@
+[
+  {
+    "timestamp": 1765645498278,
+    "type": "sendToFloor",
+    "actorId": "user",
+    "content": "Thank you very much. ",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765645499585,
+    "type": "sendToFloor",
+    "actorId": "user",
+    "content": "Hello, I'd like a wardrobe, please.",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765645510061,
+    "type": "sendToFloor",
+    "actorId": "user",
+    "content": "Postcode is SW170GS.",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765645529384,
+    "type": "sendToFloor",
+    "actorId": "user",
+    "content": "Preferably things in stock",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765645547212,
+    "type": "sendToFloor",
+    "actorId": "user",
+    "content": "Oak, please",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765645579879,
+    "type": "sendToFloor",
+    "actorId": "user",
+    "content": "Bye for now.",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765645597266,
+    "type": "sendToFloor",
+    "actorId": "user",
+    "content": "I'm hoping that one of you can tell me.",
+    "urgent": false
+  }
+]

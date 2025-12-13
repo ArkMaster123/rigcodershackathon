@@ -1,0 +1,8 @@
+[
+    {
+        "timestamp": 0,
+        "type": "receiveMessage",
+        "actorId": "user",
+        "content": "I want some new wardrobe. I'm looking for a fitted wardrobe in oak. Can you help me with options and pricing?"
+    }
+]

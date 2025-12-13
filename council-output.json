@@ -1,0 +1,54 @@
+[
+  {
+    "timestamp": 0,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "I want some new wardrobe. I'm looking for a fitted wardrobe in oak. Can you help me with options and pricing?"
+  },
+  {
+    "timestamp": 1500,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "User is requesting options and pricing for a fitted wardrobe in oak. Please provide design options, material specifications, and pricing details.",
+    "stateSnapshot": {
+      "toolCalls": []
+    },
+    "urgent": true,
+    "toolCalls": []
+  },
+  {
+    "timestamp": 2000,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "Customer enquiry: I want some new wardrobe. I'm looking for a fitted wardrobe in oak. Can you help me with options and pricing?",
+    "urgent": true
+  },
+  {
+    "timestamp": 3500,
+    "type": "acceptFromQueue",
+    "actorId": "projectArchitect",
+    "stateSnapshot": {
+      "toolCalls": []
+    }
+  },
+  {
+    "timestamp": 4500,
+    "type": "replyToAgent",
+    "actorId": "projectArchitect",
+    "targetId": "callAgent",
+    "content": "To provide accurate design options and pricing for a fitted oak wardrobe, I need some additional details:\\n\\n1. What are the intended dimensions (height, width, depth) or the available space for the wardrobe?\\n2. Will the wardrobe be load‑bearing (e.g., holding heavy items such as books, seasonal clothing, or equipment)? If so, what is the approximate maximum weight it must support?\\n3. Do you have any specific layout preferences (e.g., number of hanging sections, shelves, drawers, sliding doors vs. hinged doors)?\\n4. Are there any constraints regarding the wall type or mounting method (e.g., timber stud wall, concrete, need for anchoring)?\\n5. Do you require any special features such as integrated lighting, mirrors, or internal fittings?\\n\\nOnce I have this information, I can verify structural feasibility, suggest appropriate oak material grades, and ensure the design will be safe and durable.",
+    "stateSnapshot": {
+      "toolCalls": []
+    },
+    "toolCalls": []
+  },
+  {
+    "timestamp": 6500,
+    "type": "replyToUser",
+    "actorId": "callAgent",
+    "content": "Sure, I can help you with that! To provide accurate design options and pricing for a fitted oak wardrobe, could you please let me know:\n\n1. The intended dimensions (height, width, depth) or the exact space where the wardrobe will be installed.\n2. Whether the wardrobe will need to bear heavy items (e.g., books, seasonal clothing, equipment). If so, what is the approximate maximum weight it should support?\n3. Your layout preferences (e.g., number of hanging sections, shelves, drawers, sliding doors vs. hinged doors).\n4. Any constraints regarding the wall type or mounting method (e.g., timber stud wall, concrete, need for anchoring).\n5. Any special features you’d like, such as integrated lighting, mirrors, or internal fittings.\n\nOnce I have these details, I’ll be able to give you tailored options and pricing. Thank you!",
+    "stateSnapshot": {
+      "toolCalls": []
+    }
+  }
+]

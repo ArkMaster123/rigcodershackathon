@@ -1,0 +1,6 @@
+ruleDirs:
+- /home/arlyon/Programming/rigcodershackathon/rules
+testConfigs:
+- testDir: /home/arlyon/Programming/rigcodershackathon/rule-tests
+utilDirs:
+- /home/arlyon/Programming/rigcodershackathon/utils

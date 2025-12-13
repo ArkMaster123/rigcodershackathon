@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // Enable latest features
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "allowJs": false,
+
+    "esModuleInterop": true,
+
+    // These options are necessary so that TypeDoc can resolve references across packages
+    "declaration": false, // should be true but disabled for better-auth
+    "declarationMap": false, // should be true but disabled for better-auth
+    "composite": false,
+
+    // Best practices
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+
+    // Some stricter flags (disabled by default)
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noPropertyAccessFromIndexSignature": false
+  },
+  "exclude": ["node_modules", "**/*.test.*ts", "**/*.d.ts"]
+}

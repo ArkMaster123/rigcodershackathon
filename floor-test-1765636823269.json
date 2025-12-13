@@ -1,0 +1,33 @@
+[
+  {
+    "timestamp": 1765636823269,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "I need pricing for oak lumber"
+  },
+  {
+    "timestamp": 1765636823369,
+    "type": "sendToFloor",
+    "actorId": "salesAgent",
+    "content": "Need timber specialist for oak pricing"
+  },
+  {
+    "timestamp": 1765636823469,
+    "type": "acceptFromQueue",
+    "actorId": "agent1",
+    "content": "Taking oak pricing task"
+  },
+  {
+    "timestamp": 1765636823569,
+    "type": "replyToAgent",
+    "actorId": "agent1",
+    "targetId": "salesAgent",
+    "content": "Oak: $4.50/board foot, 200 units available"
+  },
+  {
+    "timestamp": 1765636823669,
+    "type": "replyToUser",
+    "actorId": "salesAgent",
+    "content": "Oak lumber is $4.50 per board foot with 200 units in stock"
+  }
+]

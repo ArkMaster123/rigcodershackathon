@@ -1,0 +1,54 @@
+[
+  {
+    "timestamp": 0,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "Hello, I am looking to buy a wooden desk. I would like to order a desk with a wooden frame and a drawer. The desk should be made of oak and have a height of 12 inches. Can you help me with this?"
+  },
+  {
+    "timestamp": 1500,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "User requests a custom wooden desk with an oak wooden frame, a drawer, and a height of 12 inches. Please provide design specifications, material availability, and pricing details.",
+    "stateSnapshot": {
+      "toolCalls": []
+    },
+    "urgent": true,
+    "toolCalls": []
+  },
+  {
+    "timestamp": 2000,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "Customer enquiry: Hello, I am looking to buy a wooden desk. I would like to order a desk with a wooden frame and a drawer. The desk should be made of oak and have a height of 12 inches. Can you help me with this?",
+    "urgent": true
+  },
+  {
+    "timestamp": 3500,
+    "type": "acceptFromQueue",
+    "actorId": "projectArchitect",
+    "stateSnapshot": {
+      "toolCalls": []
+    }
+  },
+  {
+    "timestamp": 4500,
+    "type": "replyToAgent",
+    "actorId": "projectArchitect",
+    "targetId": "callAgent",
+    "content": "The requested desk has a height of 12 inches, which is significantly lower than standard desk ergonomics (typically 28‑30 inches). To assess structural feasibility, we need additional details: \n1. Desired width and depth of the desk surface. \n2. Intended load capacity (e.g., typical weight of equipment or items to be placed on the desk). \n3. Drawer dimensions and placement (full‑height drawer, side drawer, etc.). \n4. Any specific style or support requirements (e.g., need for cross‑bracing, leg design). \n5. Intended use (standing desk, child’s desk, low‑profile table) – this context helps determine if a 12‑inch height is appropriate.\n\nOnce we have these specifications, we can confirm whether an oak frame with a drawer can safely meet the design goals and provide recommendations for any necessary reinforcements.",
+    "stateSnapshot": {
+      "toolCalls": []
+    },
+    "toolCalls": []
+  },
+  {
+    "timestamp": 6500,
+    "type": "replyToUser",
+    "actorId": "callAgent",
+    "content": "Thank you for your interest in a custom oak desk! To ensure we design a desk that meets your needs and is safe at the 12‑inch height, could you please provide a few more details?\n\n1. Desired width and depth of the desk surface (e.g., 48\" × 24\").\n2. Expected load capacity – what items (computer, monitor, books, etc.) will be placed on the desk?\n3. Drawer specifications – size, placement (full‑height, side drawer, etc.).\n4. Any style or support preferences (e.g., leg design, cross‑bracing, decorative elements).\n5. Intended use – is this a standing‑desk, child’s desk, low‑profile table, or something else?\n\nWith this information we can confirm feasibility, suggest any necessary reinforcements, and provide you with a detailed quote.",
+    "stateSnapshot": {
+      "toolCalls": []
+    }
+  }
+]

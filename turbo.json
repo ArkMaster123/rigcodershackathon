@@ -1,0 +1,204 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "tasks": {
+        "check": {
+            "dependsOn": [
+                "fmt",
+                "lint:apply",
+                "test",
+                "typecheck",
+                "//#ast-grep:apply"
+            ]
+        },
+        "fmt": {
+            "inputs": [
+                "$TURBO_DEFAULT$",
+                "../../biome.json"
+            ]
+        },
+        "ladle": {
+            "persistent": true
+        },
+        "build:ladle": {
+            "outputs": [
+                "build"
+            ]
+        },
+        "start:ladle": {
+            "dependsOn": [
+                "build:ladle"
+            ],
+            "persistent": true
+        },
+        "test:playwright": {
+            "inputs": [
+                "build"
+            ]
+        },
+        "auth:generate": {},
+        "drizzle:push": {
+            "env": [
+                "POSTGRES_URL"
+            ],
+            "interactive": true,
+            "cache": false
+        },
+        "drizzle:studio": {
+            "env": [
+                "POSTGRES_URL"
+            ],
+            "persistent": true
+        },
+        "drizzle:migrate": {
+            "env": [
+                "POSTGRES_URL"
+            ],
+            "persistent": true
+        },
+        "typecheck": {
+            "inputs": [
+                "$TURBO_DEFAULT$",
+                "../../tsconfig.json",
+                "!**/*.stories.{tsx,mdx}",
+                "!**/*.test.ts",
+                "!**/*.test.wf.ts",
+                "!**/*-snapshots/*"
+            ],
+            "dependsOn": [
+                "next:typegen"
+            ]
+        },
+        "next:typegen": {
+            "outputs": [
+                ".next/types/**"
+            ]
+        },
+        "dev": {
+            "persistent": true,
+            "cache": false
+        },
+        "server": {
+            "persistent": true,
+            "cache": false
+        },
+        "start": {
+            "dependsOn": [
+                "build"
+            ],
+            "persistent": true,
+            "cache": false
+        },
+        "build": {
+            "dependsOn": [
+                "^build"
+            ],
+            "inputs": [
+                "$TURBO_DEFAULT$",
+                "!**/*.stories.{tsx,mdx}",
+                "!**/*.test.ts",
+                "!**/*.test.wf.ts",
+                "!**/*-snapshots/*"
+            ],
+            "outputs": [
+                ".next/**",
+                "!.next/cache/**",
+                "dist",
+                "build"
+            ],
+            "env": [
+                "AUTHORIZATION_ADMIN_SECRET",
+                "TEMPORAL_SERVER",
+                "NAMESPACE",
+                "POSTGRES_URL",
+                "BETTER_AUTH_SECRET",
+                "AWS_ACCESS_KEY_ID",
+                "AWS_SECRET_ACCESS_KEY",
+                "SENDGRID_API_KEY",
+                "FLAGS_SECRET",
+                "NEXT_PUBLIC_PRODUCTION_WEBSITE_URL",
+                "NEXT_PUBLIC_WEBSITE_URL",
+                "GOOGLE_GENERATIVE_AI_API_KEY",
+                "ANTHROPIC_API_KEY",
+                "GHL_CLIENT_ID",
+                "GHL_CLIENT_SECRET"
+            ]
+        },
+        "build:docker": {
+            "inputs": [
+                "$TURBO_DEFAULT$",
+                "../../tsconfig.json"
+            ]
+        },
+        "lint": {
+            "inputs": [
+                "$TURBO_DEFAULT$",
+                "../../biome.json"
+            ]
+        },
+        "lint:apply": {
+            "inputs": [
+                "$TURBO_DEFAULT$",
+                "../../biome.json"
+            ]
+        },
+        "docs": {},
+        "test": {
+            "dependsOn": [
+                "test:wf",
+                "test:bun"
+            ],
+            "env": [
+                "DOCKER_HOST",
+                "DEBUG",
+                "OPENAI_API_KEY",
+                "GOOGLE_GENERATIVE_AI_API_KEY",
+                "ANTHROPIC_API_KEY",
+                "GHL_CLIENT_ID",
+                "GHL_CLIENT_SECRET"
+            ]
+        },
+        "test:wf": {
+            "env": [
+                "DOCKER_HOST",
+                "DEBUG",
+                "OPENAI_API_KEY",
+                "GOOGLE_GENERATIVE_AI_API_KEY",
+                "ANTHROPIC_API_KEY",
+                "GHL_CLIENT_ID",
+                "GHL_CLIENT_SECRET"
+            ]
+        },
+        "test:bun": {
+            "outputs": [
+                "__snapshots__/**"
+            ],
+            "env": [
+                "DOCKER_HOST",
+                "DEBUG",
+                "OPENAI_API_KEY",
+                "GOOGLE_GENERATIVE_AI_API_KEY",
+                "ANTHROPIC_API_KEY",
+                "GHL_CLIENT_ID",
+                "GHL_CLIENT_SECRET"
+            ]
+        },
+        "test:watch": {
+            "persistent": true
+        },
+        "test:coverage": {},
+        "//#typos": {},
+        "//#ast-grep": {},
+        "//#ast-grep:apply": {},
+        "docs:json": {},
+        "//#docs:merge": {
+            "dependsOn": [
+                "@hack/activities#docs:json",
+                "@hack/api#docs:json",
+                "@hack/api-react#docs:json",
+                "@hack/common#docs:json",
+                "@hack/workflows#docs:json"
+            ]
+        }
+    },
+    "ui": "tui"
+}

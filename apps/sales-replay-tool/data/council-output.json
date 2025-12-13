@@ -1,0 +1,73 @@
+[
+  {
+    "timestamp": 0,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "I want some new wardrobe. I'm looking for a fitted wardrobe in oak. Can you help me with options and pricing?"
+  },
+  {
+    "timestamp": 1500,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "User requests options and pricing for a fitted wardrobe in oak. Please provide design options, dimensions, material specifications, and pricing details.",
+    "stateSnapshot": {
+      "toolCalls": []
+    },
+    "urgent": true,
+    "toolCalls": []
+  },
+  {
+    "timestamp": 2000,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "Customer enquiry: I want some new wardrobe. I'm looking for a fitted wardrobe in oak. Can you help me with options and pricing?",
+    "urgent": true
+  },
+  {
+    "timestamp": 3500,
+    "type": "acceptFromQueue",
+    "actorId": "availabilityScheduler",
+    "stateSnapshot": {
+      "toolCalls": []
+    }
+  },
+  {
+    "timestamp": 4500,
+    "type": "replyToAgent",
+    "actorId": "availabilityScheduler",
+    "targetId": "callAgent",
+    "content": "",
+    "stateSnapshot": {
+      "toolCalls": []
+    },
+    "toolCalls": []
+  },
+  {
+    "timestamp": 6000,
+    "type": "acceptFromQueue",
+    "actorId": "projectArchitect",
+    "stateSnapshot": {
+      "toolCalls": []
+    }
+  },
+  {
+    "timestamp": 7000,
+    "type": "replyToAgent",
+    "actorId": "projectArchitect",
+    "targetId": "callAgent",
+    "content": "To design a fitted oak wardrobe that meets structural and safety standards, I need a few details:\n1. What are the exact interior dimensions of the space (height, width, depth) where the wardrobe will be installed?\n2. Will the wardrobe include any internal load‑bearing features (e.g., hanging rails, drawers, shelves) and what maximum weight should each section support?\n3. Are there any specific design elements required (e.g., sliding doors, glass inserts, internal lighting)?\n4. Do you have a preferred budget range or target price for the completed wardrobe?\nProviding this information will allow me to confirm feasibility, suggest appropriate oak material grades, and ensure the design is structurally sound before we pull product and pricing data.",
+    "stateSnapshot": {
+      "toolCalls": []
+    },
+    "toolCalls": []
+  },
+  {
+    "timestamp": 9000,
+    "type": "replyToUser",
+    "actorId": "callAgent",
+    "content": "Absolutely, I can help you with a fitted oak wardrobe. To provide accurate design options and pricing, could you please share a few details?\n\n1. **Interior dimensions** of the space (height, width, depth) where the wardrobe will be installed.\n2. **Internal features** you’d like (e.g., hanging rails, drawers, shelves) and the maximum weight each section should support.\n3. Any **specific design elements** you prefer, such as sliding doors, glass inserts, internal lighting, etc.\n4. Your **budget range** or target price for the completed wardrobe.\n\nOnce I have this information, I’ll be able to present you with suitable options and pricing. Thank you!",
+    "stateSnapshot": {
+      "toolCalls": []
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "timestamp": 0,
+        "type": "receiveMessage",
+        "actorId": "user",
+        "content": "Hello, I am looking to buy a wooden desk. I would like to order a desk with a wooden frame and a drawer. The desk should be made of oak and have a height of 12 inches. Can you help me with this?"
+    },
+    {
+        "timestamp": 3000,
+        "type": "sendToFloor",
+        "actorId": "callAgent",
+        "urgent": true,
+        "content": "What is the price of a desk with a wooden frame and a drawer made of oak and with a height of 12 inches?"
+    },
+    {
+        "timestamp": 5000,
+        "type": "acceptFromQueue",
+        "actorId": "designAgent",
+        "stateSnapshot": {
+            "design": "Wooden frame, drawer",
+            "dimensions": "12 inches",
+            "wood": "Oak"
+        }
+    },
+    {
+        "timestamp": 6000,
+        "type": "replyToAgent",
+        "actorId": "designAgent",
+        "content": "The price is something like $1000.",
+        "stateSnapshot": {}
+    },
+    {
+        "timestamp": 7000,
+        "type": "replyToUser",
+        "actorId": "callAgent",
+        "content": "I see. The price is $1000. Is that okay?"
+    }
+]

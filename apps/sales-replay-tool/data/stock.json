@@ -1,0 +1,558 @@
+{
+  "products": [
+    {
+      "id": "prod-001",
+      "name": "Oak Dining Table",
+      "description": "Handcrafted solid oak dining table with traditional joinery",
+      "designType": "Traditional",
+      "category": "Dining",
+      "price": 2499.99,
+      "leadTimeDays": 42,
+      "material": "Oak",
+      "dimensions": {
+        "length": 200,
+        "width": 90,
+        "height": 75
+      },
+      "unit": "cm",
+      "stockStatus": "In Stock",
+      "quantityAvailable": 3,
+      "upsellOpportunities": [
+        {
+          "productId": "prod-002",
+          "name": "Matching Oak Chairs",
+          "reason": "Complete the dining set"
+        },
+        {
+          "productId": "prod-015",
+          "name": "Table Runner Set",
+          "reason": "Protect and enhance the table"
+        }
+      ],
+      "weightCapacity": 150,
+      "complexity": "Medium"
+    },
+    {
+      "id": "prod-002",
+      "name": "Matching Oak Chairs",
+      "description": "Set of 4 handcrafted oak dining chairs with upholstered seats",
+      "designType": "Traditional",
+      "category": "Dining",
+      "price": 1299.99,
+      "leadTimeDays": 35,
+      "material": "Oak",
+      "dimensions": {
+        "length": 45,
+        "width": 50,
+        "height": 95
+      },
+      "unit": "cm",
+      "stockStatus": "In Stock",
+      "quantityAvailable": 2,
+      "upsellOpportunities": [
+        {
+          "productId": "prod-001",
+          "name": "Oak Dining Table",
+          "reason": "Complete the dining set"
+        }
+      ],
+      "weightCapacity": 120,
+      "complexity": "Low"
+    },
+    {
+      "id": "prod-003",
+      "name": "Modern Teak Coffee Table",
+      "description": "Contemporary coffee table with clean lines and hidden storage",
+      "designType": "Modern",
+      "category": "Living Room",
+      "price": 1899.99,
+      "leadTimeDays": 28,
+      "material": "Teak",
+      "dimensions": {
+        "length": 120,
+        "width": 60,
+        "height": 40
+      },
+      "unit": "cm",
+      "stockStatus": "Low Stock",
+      "quantityAvailable": 1,
+      "upsellOpportunities": [
+        {
+          "productId": "prod-004",
+          "name": "Matching Side Tables",
+          "reason": "Create a cohesive living room set"
+        }
+      ],
+      "weightCapacity": 50,
+      "complexity": "Medium"
+    },
+    {
+      "id": "prod-004",
+      "name": "Matching Side Tables",
+      "description": "Pair of modern teak side tables with drawer storage",
+      "designType": "Modern",
+      "category": "Living Room",
+      "price": 899.99,
+      "leadTimeDays": 28,
+      "material": "Teak",
+      "dimensions": {
+        "length": 50,
+        "width": 50,
+        "height": 55
+      },
+      "unit": "cm",
+      "stockStatus": "In Stock",
+      "quantityAvailable": 4,
+      "upsellOpportunities": [
+        {
+          "productId": "prod-003",
+          "name": "Modern Teak Coffee Table",
+          "reason": "Create a cohesive living room set"
+        }
+      ],
+      "weightCapacity": 30,
+      "complexity": "Low"
+    },
+    {
+      "id": "prod-005",
+      "name": "Custom Bookshelf Unit",
+      "description": "Floor-to-ceiling bookshelf with adjustable shelves",
+      "designType": "Custom",
+      "category": "Storage",
+      "price": 3299.99,
+      "leadTimeDays": 56,
+      "material": "Pine",
+      "dimensions": {
+        "length": 180,
+        "width": 40,
+        "height": 240
+      },
+      "unit": "cm",
+      "stockStatus": "Made to Order",
+      "quantityAvailable": 0,
+      "upsellOpportunities": [
+        {
+          "productId": "prod-016",
+          "name": "Custom Installation Service",
+          "reason": "Professional installation for large items"
+        }
+      ],
+      "weightCapacity": 200,
+      "complexity": "High"
+    },
+    {
+      "id": "prod-006",
+      "name": "Walnut Bed Frame",
+      "description": "Solid walnut bed frame with integrated storage drawers",
+      "designType": "Contemporary",
+      "category": "Bedroom",
+      "price": 4299.99,
+      "leadTimeDays": 49,
+      "material": "Walnut",
+      "dimensions": {
+        "length": 210,
+        "width": 160,
+        "height": 50
+      },
+      "unit": "cm",
+      "stockStatus": "In Stock",
+      "quantityAvailable": 2,
+      "upsellOpportunities": [
+        {
+          "productId": "prod-007",
+          "name": "Matching Nightstands",
+          "reason": "Complete the bedroom set"
+        },
+        {
+          "productId": "prod-017",
+          "name": "Premium Finishing Service",
+          "reason": "Enhance the natural wood grain"
+        }
+      ],
+      "weightCapacity": 300,
+      "complexity": "High"
+    },
+    {
+      "id": "prod-007",
+      "name": "Matching Nightstands",
+      "description": "Pair of walnut nightstands with drawer and shelf",
+      "designType": "Contemporary",
+      "category": "Bedroom",
+      "price": 1199.99,
+      "leadTimeDays": 42,
+      "material": "Walnut",
+      "dimensions": {
+        "length": 50,
+        "width": 40,
+        "height": 60
+      },
+      "unit": "cm",
+      "stockStatus": "In Stock",
+      "quantityAvailable": 3,
+      "upsellOpportunities": [
+        {
+          "productId": "prod-006",
+          "name": "Walnut Bed Frame",
+          "reason": "Complete the bedroom set"
+        }
+      ],
+      "weightCapacity": 25,
+      "complexity": "Medium"
+    },
+    {
+      "id": "prod-008",
+      "name": "Cherry Wood Desk",
+      "description": "Executive desk with multiple drawers and cable management",
+      "designType": "Traditional",
+      "category": "Office",
+      "price": 3499.99,
+      "leadTimeDays": 63,
+      "material": "Cherry",
+      "dimensions": {
+        "length": 180,
+        "width": 80,
+        "height": 75
+      },
+      "unit": "cm",
+      "stockStatus": "Made to Order",
+      "quantityAvailable": 0,
+      "upsellOpportunities": [
+        {
+          "productId": "prod-009",
+          "name": "Matching Desk Chair",
+          "reason": "Complete the office setup"
+        }
+      ],
+      "weightCapacity": 100,
+      "complexity": "High"
+    },
+    {
+      "id": "prod-009",
+      "name": "Matching Desk Chair",
+      "description": "Ergonomic office chair with cherry wood accents",
+      "designType": "Traditional",
+      "category": "Office",
+      "price": 899.99,
+      "leadTimeDays": 35,
+      "material": "Cherry",
+      "dimensions": {
+        "length": 60,
+        "width": 60,
+        "height": 120
+      },
+      "unit": "cm",
+      "stockStatus": "In Stock",
+      "quantityAvailable": 5,
+      "upsellOpportunities": [
+        {
+          "productId": "prod-008",
+          "name": "Cherry Wood Desk",
+          "reason": "Complete the office setup"
+        }
+      ],
+      "weightCapacity": 150,
+      "complexity": "Medium"
+    },
+    {
+      "id": "prod-010",
+      "name": "Maple Kitchen Island",
+      "description": "Custom kitchen island with butcher block top and storage",
+      "designType": "Custom",
+      "category": "Kitchen",
+      "price": 5499.99,
+      "leadTimeDays": 70,
+      "material": "Maple",
+      "dimensions": {
+        "length": 150,
+        "width": 90,
+        "height": 90
+      },
+      "unit": "cm",
+      "stockStatus": "Made to Order",
+      "quantityAvailable": 0,
+      "upsellOpportunities": [
+        {
+          "productId": "prod-016",
+          "name": "Custom Installation Service",
+          "reason": "Professional installation for kitchen items"
+        },
+        {
+          "productId": "prod-017",
+          "name": "Premium Finishing Service",
+          "reason": "Food-safe finish for kitchen surfaces"
+        }
+      ],
+      "weightCapacity": 200,
+      "complexity": "High"
+    },
+    {
+      "id": "prod-011",
+      "name": "Fitted Wardrobe",
+      "description": "Custom fitted wardrobe made to measure for your space. Available in multiple materials and finishes with adjustable shelving and hanging rails",
+      "designType": "Custom",
+      "category": "Bedroom",
+      "price": 4299.99,
+      "leadTimeDays": 56,
+      "material": "Multiple Options",
+      "materialOptions": ["Oak", "Walnut", "Cherry", "Maple", "Pine"],
+      "dimensions": {
+        "length": "Custom",
+        "width": "Custom",
+        "height": "Floor to Ceiling"
+      },
+      "unit": "cm",
+      "stockStatus": "Made to Order",
+      "quantityAvailable": 0,
+      "requiresMeasurement": true,
+      "features": [
+        "Adjustable shelving",
+        "Hanging rails",
+        "Drawer options",
+        "Mirror doors (optional)",
+        "Lighting options",
+        "Shoe storage",
+        "Custom interior layout"
+      ],
+      "upsellOpportunities": [
+        {
+          "productId": "svc-005",
+          "name": "Custom Measurements",
+          "reason": "Required for fitted wardrobe - on-site measurement service"
+        },
+        {
+          "productId": "svc-001",
+          "name": "Custom Installation Service",
+          "reason": "Professional installation for fitted furniture"
+        },
+        {
+          "productId": "svc-002",
+          "name": "Premium Finishing Service",
+          "reason": "Custom finish to match your bedroom decor"
+        },
+        {
+          "productId": "svc-004",
+          "name": "Design Consultation",
+          "reason": "Expert advice on layout and storage solutions"
+        },
+        {
+          "productId": "prod-006",
+          "name": "Matching Bed Frame",
+          "reason": "Complete the bedroom set with coordinated furniture"
+        },
+        {
+          "productId": "prod-007",
+          "name": "Matching Nightstands",
+          "reason": "Create a cohesive bedroom design"
+        }
+      ],
+      "weightCapacity": 500,
+      "complexity": "High",
+      "notes": "Price is base price. Final price depends on dimensions, material choice, and custom features. Consultation and measurement required before order."
+    }
+  ],
+  "materials": [
+    {
+      "id": "mat-001",
+      "woodType": "Oak",
+      "grade": "Premium",
+      "pricePerUnit": 45.50,
+      "unit": "board foot",
+      "availability": "In Stock",
+      "leadTimeDays": 7,
+      "quantityAvailable": 500,
+      "suitableFor": ["Dining", "Living Room", "Office"],
+      "characteristics": ["Durable", "Heavy", "Traditional grain"]
+    },
+    {
+      "id": "mat-002",
+      "woodType": "Teak",
+      "grade": "Premium",
+      "pricePerUnit": 68.75,
+      "unit": "board foot",
+      "availability": "Low Stock",
+      "leadTimeDays": 14,
+      "quantityAvailable": 120,
+      "suitableFor": ["Outdoor", "Living Room", "Kitchen"],
+      "characteristics": ["Weather resistant", "Durable", "Natural oils"]
+    },
+    {
+      "id": "mat-003",
+      "woodType": "Walnut",
+      "grade": "Premium",
+      "pricePerUnit": 52.00,
+      "unit": "board foot",
+      "availability": "In Stock",
+      "leadTimeDays": 10,
+      "quantityAvailable": 350,
+      "suitableFor": ["Bedroom", "Office", "Living Room"],
+      "characteristics": ["Rich color", "Fine grain", "Premium finish"]
+    },
+    {
+      "id": "mat-004",
+      "woodType": "Cherry",
+      "grade": "Premium",
+      "pricePerUnit": 48.25,
+      "unit": "board foot",
+      "availability": "In Stock",
+      "leadTimeDays": 7,
+      "quantityAvailable": 400,
+      "suitableFor": ["Office", "Dining", "Traditional"],
+      "characteristics": ["Warm tone", "Smooth finish", "Ages beautifully"]
+    },
+    {
+      "id": "mat-005",
+      "woodType": "Maple",
+      "grade": "Premium",
+      "pricePerUnit": 38.50,
+      "unit": "board foot",
+      "availability": "In Stock",
+      "leadTimeDays": 5,
+      "quantityAvailable": 600,
+      "suitableFor": ["Kitchen", "Modern", "Light finish"],
+      "characteristics": ["Light color", "Hard", "Food safe"]
+    },
+    {
+      "id": "mat-006",
+      "woodType": "Pine",
+      "grade": "Standard",
+      "pricePerUnit": 22.00,
+      "unit": "board foot",
+      "availability": "In Stock",
+      "leadTimeDays": 3,
+      "quantityAvailable": 800,
+      "suitableFor": ["Storage", "Budget", "Custom"],
+      "characteristics": ["Lightweight", "Easy to work", "Cost effective"]
+    },
+    {
+      "id": "mat-007",
+      "woodType": "Mahogany",
+      "grade": "Premium",
+      "pricePerUnit": 75.00,
+      "unit": "board foot",
+      "availability": "Out of Stock",
+      "leadTimeDays": 21,
+      "quantityAvailable": 0,
+      "suitableFor": ["Luxury", "Traditional", "High-end"],
+      "characteristics": ["Rich red tone", "Premium", "Limited availability"]
+    }
+  ],
+  "services": [
+    {
+      "id": "svc-001",
+      "name": "Custom Installation Service",
+      "description": "Professional installation for large furniture items",
+      "pricePerJob": 299.99,
+      "leadTimeDays": 3,
+      "availability": "Available",
+      "suitableFor": ["Large items", "Complex assembly", "Floor-to-ceiling units"],
+      "includes": ["Assembly", "Placement", "Leveling", "Basic adjustments"]
+    },
+    {
+      "id": "svc-002",
+      "name": "Premium Finishing Service",
+      "description": "Custom wood finishing and staining service",
+      "pricePerJob": 449.99,
+      "leadTimeDays": 7,
+      "availability": "Available",
+      "suitableFor": ["Custom finishes", "Color matching", "Premium projects"],
+      "includes": ["Sanding", "Staining", "Sealing", "Quality inspection"]
+    },
+    {
+      "id": "svc-003",
+      "name": "White Glove Delivery",
+      "description": "Premium delivery service with setup and removal of packaging",
+      "pricePerJob": 199.99,
+      "leadTimeDays": 2,
+      "availability": "Available",
+      "suitableFor": ["Premium customers", "Fragile items", "Time-sensitive"],
+      "includes": ["Careful handling", "Room placement", "Packaging removal", "Basic setup"]
+    },
+    {
+      "id": "svc-004",
+      "name": "Design Consultation",
+      "description": "One-on-one consultation with our design expert",
+      "pricePerJob": 149.99,
+      "leadTimeDays": 1,
+      "availability": "Available",
+      "suitableFor": ["Custom projects", "Space planning", "Design decisions"],
+      "includes": ["1-hour consultation", "Design recommendations", "Material selection", "Follow-up notes"]
+    },
+    {
+      "id": "svc-005",
+      "name": "Custom Measurements",
+      "description": "On-site measurement service for custom furniture",
+      "pricePerJob": 99.99,
+      "leadTimeDays": 1,
+      "availability": "Available",
+      "suitableFor": ["Custom orders", "Fitted furniture", "Precise requirements"],
+      "includes": ["Site visit", "Detailed measurements", "Photography", "Technical drawings"]
+    },
+    {
+      "id": "svc-006",
+      "name": "Restoration Service",
+      "description": "Professional restoration of antique or damaged furniture",
+      "pricePerJob": 599.99,
+      "leadTimeDays": 14,
+      "availability": "Available",
+      "suitableFor": ["Antique furniture", "Damaged items", "Vintage pieces"],
+      "includes": ["Assessment", "Repair", "Refinishing", "Hardware replacement"]
+    }
+  ],
+  "decorators": [
+    {
+      "id": "dec-001",
+      "name": "Sarah Mitchell",
+      "specialty": "Traditional & Classic",
+      "pricePerJob": 799.99,
+      "leadTimeDays": 5,
+      "availability": "Available",
+      "experience": "15 years",
+      "rating": 4.9,
+      "services": ["Color consultation", "Furniture placement", "Accessory selection", "Room styling"]
+    },
+    {
+      "id": "dec-002",
+      "name": "James Chen",
+      "specialty": "Modern & Contemporary",
+      "pricePerJob": 899.99,
+      "leadTimeDays": 7,
+      "availability": "Available",
+      "experience": "12 years",
+      "rating": 4.8,
+      "services": ["Space planning", "Modern aesthetics", "Minimalist design", "Tech integration"]
+    },
+    {
+      "id": "dec-003",
+      "name": "Emma Rodriguez",
+      "specialty": "Rustic & Farmhouse",
+      "pricePerJob": 749.99,
+      "leadTimeDays": 6,
+      "availability": "Available",
+      "experience": "10 years",
+      "rating": 4.7,
+      "services": ["Rustic styling", "Vintage finds", "Natural materials", "Cozy spaces"]
+    },
+    {
+      "id": "dec-004",
+      "name": "Michael Thompson",
+      "specialty": "Luxury & High-End",
+      "pricePerJob": 1299.99,
+      "leadTimeDays": 10,
+      "availability": "Available",
+      "experience": "20 years",
+      "rating": 5.0,
+      "services": ["Luxury design", "Premium materials", "Custom solutions", "Full project management"]
+    },
+    {
+      "id": "dec-005",
+      "name": "Lisa Park",
+      "specialty": "Scandinavian & Minimalist",
+      "pricePerJob": 849.99,
+      "leadTimeDays": 5,
+      "availability": "Booked",
+      "experience": "8 years",
+      "rating": 4.6,
+      "services": ["Scandinavian design", "Light colors", "Functional spaces", "Natural light"]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+	"name": "@hack/form",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"main": "index.ts",
+	"exports": {
+		".": "./index.ts",
+		"./ai": "./ai.ts",
+		"./livekit": "./src/livekit/index.ts"
+	},
+	"scripts": {
+		"fmt": "biome format --write",
+		"lint": "biome check",
+		"build": "tsup ./examples/livekit-agent/worker.ts --format esm",
+		"start": "LIVEKIT_URL=wss://carpe-dm6a4iry.livekit.cloud LIVEKIT_API_KEY=APIQfU9kEfEUqQD LIVEKIT_API_SECRET=5pFo5tweFT3e98Ez8iUezdRM267lQcQisOc8jTSL6LmA GEMINI_API_KEY=AIzaSyA98eFliRpg-e3RrDqyFdiRxiN2t0wUOQU ./dist/worker.js start",
+		"lint:apply": "biome check --write",
+		"typecheck": "tsc --noEmit",
+		"docs": "typedoc",
+		"docs:json": "typedoc --json docs.json",
+		"test:bun": "bun test"
+	},
+	"dependencies": {
+		"@ai-sdk/google": "^2.0.0",
+		"@aws-sdk/client-s3": "3.840.0",
+		"@aws-sdk/s3-request-presigner": "3.840.0",
+		"@livekit/agents": "^1.0.27",
+		"@livekit/agents-plugin-deepgram": "^1.0.27",
+		"@livekit/agents-plugin-elevenlabs": "^1.0.27",
+		"@livekit/agents-plugin-openai": "^1.0.27",
+		"@livekit/agents-plugin-silero": "^1.0.27",
+		"@traversable/registry": "^0.0.49",
+		"@traversable/zod": "^0.0.57",
+		"ai": "^5.0.112",
+		"zod": "^4.0.0",
+		"zod-to-json-schema": "^3.24.1"
+	},
+	"peerDependencies": {
+		"react": ">=18",
+		"react-dom": ">=18"
+	},
+	"peerDependenciesMeta": {
+		"react": {
+			"optional": true
+		},
+		"react-dom": {
+			"optional": true
+		}
+	},
+	"devDependencies": {
+		"@hack/test-utils": "workspace:^",
+		"@happy-dom/global-registrator": "^20.0.11",
+		"@testing-library/dom": "^10.4.1",
+		"@testing-library/react": "^16.3.0",
+		"@types/node": "22.15.24",
+		"@types/react": "^18.3.1",
+		"@types/react-dom": "^18.3.0",
+		"happy-dom": "^20.0.11",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"tsup": "^8.5.1",
+		"typedoc": "^0.26.4",
+		"typescript": "^5.9.3"
+	}
+}

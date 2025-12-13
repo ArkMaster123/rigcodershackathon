@@ -1,0 +1,446 @@
+[
+  {
+    "timestamp": 1765640000000,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "Hi, I'm looking to get a custom wardrobe built"
+  },
+  {
+    "timestamp": 1765640000500,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "Customer inquiry: custom wardrobe needed. Need expert consultation.",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765640001000,
+    "type": "acceptFromQueue",
+    "actorId": "conversationGuide",
+    "content": "Taking lead on wardrobe consultation"
+  },
+  {
+    "timestamp": 1765640001500,
+    "type": "replyToUser",
+    "actorId": "conversationGuide",
+    "content": "Hello! I'd be happy to help you with a custom wardrobe. Could you tell me about the size you're looking for and what style you have in mind?"
+  },
+  {
+    "timestamp": 1765640008000,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "I need a 2.5m tall, 2m wide wardrobe with sliding doors, modern style"
+  },
+  {
+    "timestamp": 1765640008500,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "Design request: 2.5m H x 2m W wardrobe, sliding doors, modern style. Need design feasibility and structural validation.",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765640009000,
+    "type": "acceptFromQueue",
+    "actorId": "designAgent",
+    "content": "Analyzing wardrobe design requirements"
+  },
+  {
+    "timestamp": 1765640009200,
+    "type": "acceptFromQueue",
+    "actorId": "projectArchitect",
+    "content": "Reviewing structural requirements for wardrobe"
+  },
+  {
+    "timestamp": 1765640009500,
+    "type": "stateSnapshot",
+    "actorId": "designAgent",
+    "content": "{\"currentProject\": \"wardrobe\", \"dimensions\": \"2.5m x 2m\", \"style\": \"modern\", \"features\": [\"sliding doors\"]}"
+  },
+  {
+    "timestamp": 1765640011000,
+    "type": "replyToAgent",
+    "actorId": "projectArchitect",
+    "targetId": "conversationGuide",
+    "content": "Dimensions are feasible. For sliding doors at 2m width, I recommend a reinforced top rail and quality sliding mechanism. Structure is sound."
+  },
+  {
+    "timestamp": 1765640012000,
+    "type": "replyToAgent",
+    "actorId": "designAgent",
+    "targetId": "conversationGuide",
+    "content": "Modern sliding door wardrobe is achievable. Suggest internal shelving configuration with hanging rail. Design is feasible and attractive."
+  },
+  {
+    "timestamp": 1765640013000,
+    "type": "replyToUser",
+    "actorId": "conversationGuide",
+    "content": "Excellent! Those dimensions work perfectly. Our architect confirms the structure is sound, and we can create a beautiful modern design with sliding doors. Now, let me get you some wood options for the build. What's your preference - or would you like recommendations?"
+  },
+  {
+    "timestamp": 1765640018000,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "What woods do you have available? I prefer something durable"
+  },
+  {
+    "timestamp": 1765640018500,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "Need timber options: durable wood for wardrobe construction. Customer prefers longevity.",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765640019000,
+    "type": "acceptFromQueue",
+    "actorId": "timberSpecialist",
+    "content": "Checking wood availability and pricing for wardrobe project"
+  },
+  {
+    "timestamp": 1765640019500,
+    "type": "stateSnapshot",
+    "actorId": "timberSpecialist",
+    "content": "{\"checking\": [\"oak\", \"walnut\", \"maple\"], \"requirement\": \"durable, wardrobe-suitable\"}"
+  },
+  {
+    "timestamp": 1765640021000,
+    "type": "replyToAgent",
+    "actorId": "timberSpecialist",
+    "targetId": "conversationGuide",
+    "content": "For durability: Oak is in stock at £85 per square metre (excellent durability, classic). Walnut is available on order at £120 per square metre (premium durability, rich color, 3 week lead time). Both excellent for wardrobes."
+  },
+  {
+    "timestamp": 1765640022000,
+    "type": "replyToUser",
+    "actorId": "conversationGuide",
+    "content": "For durability, I have two excellent options: Oak is in stock now at £85 per square metre - it's classic, extremely durable, and beautiful. Walnut is £120 per square metre, even more luxurious with a rich color, but it would need to be ordered with a 3 week lead time. Both are perfect for wardrobes."
+  },
+  {
+    "timestamp": 1765640028000,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "Let's go with Oak"
+  },
+  {
+    "timestamp": 1765640028500,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "Customer selected Oak. Confirm availability and calculate material requirements.",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765640029000,
+    "type": "acceptFromQueue",
+    "actorId": "timberSpecialist",
+    "content": "Confirming Oak availability and calculating material cost"
+  },
+  {
+    "timestamp": 1765640030000,
+    "type": "stateSnapshot",
+    "actorId": "timberSpecialist",
+    "content": "{\"selectedWood\": \"Oak\", \"pricePerSqM\": 85, \"estimatedSqM\": 10, \"status\": \"in-stock\"}"
+  },
+  {
+    "timestamp": 1765640031000,
+    "type": "replyToAgent",
+    "actorId": "timberSpecialist",
+    "targetId": "conversationGuide",
+    "content": "Oak confirmed in stock. For 2.5m x 2m wardrobe with sliding doors, estimated 10 square metres needed. Material cost: £850."
+  },
+  {
+    "timestamp": 1765640031500,
+    "type": "acceptFromQueue",
+    "actorId": "upsellCommercial",
+    "content": "Reviewing deal value and identifying enhancement opportunities"
+  },
+  {
+    "timestamp": 1765640033000,
+    "type": "stateSnapshot",
+    "actorId": "upsellCommercial",
+    "content": "{\"basePrice\": 850, \"reviewing\": \"upsell opportunities\", \"targetMargin\": \"40%\"}"
+  },
+  {
+    "timestamp": 1765640034000,
+    "type": "replyToAgent",
+    "actorId": "upsellCommercial",
+    "targetId": "conversationGuide",
+    "content": "Good material selection. For sliding doors, strongly recommend soft-close mechanisms (+£150) - premium feel and longevity. Also consider interior LED lighting (+£200) for luxury touch. Both enhance value and customer satisfaction."
+  },
+  {
+    "timestamp": 1765640035000,
+    "type": "replyToUser",
+    "actorId": "conversationGuide",
+    "content": "Great choice with the Oak! Now, for sliding doors, I'd recommend soft-close mechanisms for £150 - they add a premium feel and protect the wardrobe long-term. We can also add interior LED lighting for £200. Would you like either of these?"
+  },
+  {
+    "timestamp": 1765640042000,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "Yes to soft-close, no to lighting"
+  },
+  {
+    "timestamp": 1765640042500,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "Customer accepted soft-close mechanisms, declined lighting. Update pricing.",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765640043000,
+    "type": "acceptFromQueue",
+    "actorId": "upsellCommercial",
+    "content": "Updating pricing with soft-close addition"
+  },
+  {
+    "timestamp": 1765640044000,
+    "type": "stateSnapshot",
+    "actorId": "upsellCommercial",
+    "content": "{\"materials\": 850, \"addons\": 150, \"labour\": 1200, \"subtotal\": 2200, \"marginCheck\": \"acceptable\"}"
+  },
+  {
+    "timestamp": 1765640045000,
+    "type": "replyToAgent",
+    "actorId": "upsellCommercial",
+    "targetId": "conversationGuide",
+    "content": "Updated pricing: Materials £850 + Labour £1200 + Soft-close £150 = £2200 total. Margin is healthy, deal is good."
+  },
+  {
+    "timestamp": 1765640045500,
+    "type": "acceptFromQueue",
+    "actorId": "riskQA",
+    "content": "Reviewing order details for completeness and consistency"
+  },
+  {
+    "timestamp": 1765640046500,
+    "type": "stateSnapshot",
+    "actorId": "riskQA",
+    "content": "{\"checking\": [\"design confirmed\", \"materials selected\", \"pricing calculated\"], \"missing\": [\"postcode\", \"consultation date\", \"delivery date\"]}"
+  },
+  {
+    "timestamp": 1765640047500,
+    "type": "replyToAgent",
+    "actorId": "riskQA",
+    "targetId": "conversationGuide",
+    "content": "Order looking good. However, we need customer postcode for accurate delivery quote and logistics planning. Also need to schedule consultation and delivery."
+  },
+  {
+    "timestamp": 1765640048500,
+    "type": "replyToUser",
+    "actorId": "conversationGuide",
+    "content": "Perfect! Before we finalize the pricing, I'll need your postcode for accurate delivery costs and logistics. What's your postcode?"
+  },
+  {
+    "timestamp": 1765640053000,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "SW1A 1AA"
+  },
+  {
+    "timestamp": 1765640053500,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "Customer postcode: SW1A 1AA. Verify delivery zone and calculate final pricing.",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765640054000,
+    "type": "acceptFromQueue",
+    "actorId": "availabilityScheduler",
+    "content": "Checking delivery zone and logistics for SW1A 1AA"
+  },
+  {
+    "timestamp": 1765640055000,
+    "type": "stateSnapshot",
+    "actorId": "availabilityScheduler",
+    "content": "{\"postcode\": \"SW1A 1AA\", \"zone\": \"Central London\", \"deliveryAvailable\": true, \"leadTime\": \"6 weeks\"}"
+  },
+  {
+    "timestamp": 1765640056000,
+    "type": "replyToAgent",
+    "actorId": "availabilityScheduler",
+    "targetId": "conversationGuide",
+    "content": "SW1A 1AA is Central London - we deliver there. Standard 6 week lead time from order to delivery for custom builds."
+  },
+  {
+    "timestamp": 1765640056500,
+    "type": "acceptFromQueue",
+    "actorId": "designAgent",
+    "content": "Finalizing design specification document"
+  },
+  {
+    "timestamp": 1765640058000,
+    "type": "replyToAgent",
+    "actorId": "designAgent",
+    "targetId": "conversationGuide",
+    "content": "Final design specification: Modern sliding door wardrobe, 2.5m height x 2m width, Oak construction with reinforced top rail, internal shelving configuration with hanging rail, premium soft-close sliding mechanisms. Design confirmed feasible."
+  },
+  {
+    "timestamp": 1765640059000,
+    "type": "replyToUser",
+    "actorId": "conversationGuide",
+    "content": "Excellent, thank you! So here's what we're building: A modern 2.5m x 2m Oak wardrobe with sliding doors, soft-close mechanisms, internal shelving and hanging rail. Total price: £2,200. This includes all materials, labour, and the soft-close upgrade. The build takes about 6 weeks from order to delivery."
+  },
+  {
+    "timestamp": 1765640065000,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "That sounds reasonable"
+  },
+  {
+    "timestamp": 1765640065500,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "Customer accepted pricing. Need to schedule consultation and delivery dates.",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765640066000,
+    "type": "acceptFromQueue",
+    "actorId": "availabilityScheduler",
+    "content": "Checking consultation availability slots"
+  },
+  {
+    "timestamp": 1765640067000,
+    "type": "stateSnapshot",
+    "actorId": "availabilityScheduler",
+    "content": "{\"checkingSlots\": \"consultation\", \"availableDates\": [\"2025-01-20\", \"2025-01-22\", \"2025-01-25\"]}"
+  },
+  {
+    "timestamp": 1765640068000,
+    "type": "replyToAgent",
+    "actorId": "availabilityScheduler",
+    "targetId": "conversationGuide",
+    "content": "Consultation slots available: Monday January 20th, Wednesday January 22nd, or Saturday January 25th. All slots are 10am-12pm or 2pm-4pm."
+  },
+  {
+    "timestamp": 1765640069000,
+    "type": "replyToUser",
+    "actorId": "conversationGuide",
+    "content": "Great! Let's get you scheduled. We have consultation slots available on Monday January 20th, Wednesday January 22nd, or Saturday January 25th. Which works best for you?"
+  },
+  {
+    "timestamp": 1765640075000,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "January 22nd works for me"
+  },
+  {
+    "timestamp": 1765640075500,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "Customer selected January 22nd consultation. Confirm booking and check delivery dates.",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765640076000,
+    "type": "acceptFromQueue",
+    "actorId": "availabilityScheduler",
+    "content": "Confirming January 22nd consultation and calculating delivery dates"
+  },
+  {
+    "timestamp": 1765640077000,
+    "type": "stateSnapshot",
+    "actorId": "availabilityScheduler",
+    "content": "{\"consultationDate\": \"2025-01-22\", \"consultationConfirmed\": true, \"deliveryOptions\": [\"2025-02-15\", \"2025-02-18\"]}"
+  },
+  {
+    "timestamp": 1765640078000,
+    "type": "replyToAgent",
+    "actorId": "availabilityScheduler",
+    "targetId": "conversationGuide",
+    "content": "January 22nd consultation confirmed. Based on 6-week build time, delivery available Saturday February 15th or Tuesday February 18th."
+  },
+  {
+    "timestamp": 1765640079000,
+    "type": "replyToUser",
+    "actorId": "conversationGuide",
+    "content": "Perfect! I've booked your consultation for Wednesday, January 22nd. For delivery, we can do Saturday February 15th or Tuesday February 18th. Which date works better for you?"
+  },
+  {
+    "timestamp": 1765640084000,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "February 15th please"
+  },
+  {
+    "timestamp": 1765640084500,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "Customer selected February 15th delivery. All details collected. Need final validation.",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765640085000,
+    "type": "acceptFromQueue",
+    "actorId": "availabilityScheduler",
+    "content": "Confirming February 15th delivery slot"
+  },
+  {
+    "timestamp": 1765640086000,
+    "type": "stateSnapshot",
+    "actorId": "availabilityScheduler",
+    "content": "{\"consultationDate\": \"2025-01-22\", \"deliveryDate\": \"2025-02-15\", \"allScheduled\": true}"
+  },
+  {
+    "timestamp": 1765640087000,
+    "type": "replyToAgent",
+    "actorId": "availabilityScheduler",
+    "targetId": "conversationGuide",
+    "content": "February 15th delivery confirmed. Full timeline: Consultation Jan 22nd, Build period 6 weeks, Delivery Feb 15th."
+  },
+  {
+    "timestamp": 1765640087500,
+    "type": "acceptFromQueue",
+    "actorId": "riskQA",
+    "content": "Performing final validation of complete order"
+  },
+  {
+    "timestamp": 1765640089000,
+    "type": "stateSnapshot",
+    "actorId": "riskQA",
+    "content": "{\"validating\": \"complete order\", \"checks\": [\"design confirmed\", \"materials confirmed\", \"pricing agreed\", \"postcode collected\", \"dates scheduled\"]}"
+  },
+  {
+    "timestamp": 1765640090000,
+    "type": "replyToAgent",
+    "actorId": "riskQA",
+    "targetId": "conversationGuide",
+    "content": "All order details verified and complete. Design feasible (confirmed by architect and design team), materials in stock, pricing transparent and agreed, logistics confirmed. No red flags. Ready to proceed with confidence."
+  },
+  {
+    "timestamp": 1765640091000,
+    "type": "replyToUser",
+    "actorId": "conversationGuide",
+    "content": "Wonderful! Let me summarize your order: Modern Oak wardrobe, 2.5m x 2m with sliding doors and soft-close mechanisms, £2,200 total. Consultation on January 22nd at your location (SW1A 1AA), and delivery on February 15th. Everything look correct?"
+  },
+  {
+    "timestamp": 1765640096000,
+    "type": "receiveMessage",
+    "actorId": "user",
+    "content": "Perfect, let's do it!"
+  },
+  {
+    "timestamp": 1765640096500,
+    "type": "sendToFloor",
+    "actorId": "callAgent",
+    "content": "Customer confirmed order. Finalizing all details.",
+    "urgent": false
+  },
+  {
+    "timestamp": 1765640097000,
+    "type": "stateSnapshot",
+    "actorId": "callAgent",
+    "content": "{\"orderStatus\": \"confirmed\", \"formComplete\": true, \"whatYouWant\": \"2.5m tall, 2m wide wardrobe with sliding doors, modern style, soft-close mechanisms\", \"postCode\": \"SW1A 1AA\", \"woodType\": {\"type\": \"instock\", \"variety\": \"Oak\", \"price\": 85}, \"designDescription\": \"Modern sliding door wardrobe, 2.5m x 2m, Oak construction with reinforced top rail, internal shelving with hanging rail, soft-close mechanisms\", \"consultationDate\": \"2025-01-22\", \"price\": 2200, \"deliveryDate\": \"2025-02-15\"}"
+  },
+  {
+    "timestamp": 1765640098000,
+    "type": "replyToUser",
+    "actorId": "conversationGuide",
+    "content": "Excellent! Your order is confirmed. You'll receive a confirmation email shortly with all the details. We'll see you on January 22nd for the consultation. Thank you for choosing us for your custom wardrobe!"
+  },
+  {
+    "timestamp": 1765640098500,
+    "type": "stateSnapshot",
+    "actorId": "conversationGuide",
+    "content": "{\"conversationStatus\": \"completed\", \"customerSatisfaction\": \"high\", \"allAgentsCollaborated\": true}"
+  }
+]
+

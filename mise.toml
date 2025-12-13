@@ -1,0 +1,3 @@
+[tools]
+ast-grep = "latest"
+bun = "latest"
