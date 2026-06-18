@@ -1,3 +1,4 @@
 # hackathon
 
-https://sales-replay-tool-qfg0mqirt-arlyons-projects.vercel.app/
+https://sales-replay-tool.vercel.app/
+
